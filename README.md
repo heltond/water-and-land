@@ -6,6 +6,9 @@
 
 Data
 Water pollution in Washington: https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.jpg
+
 Land use in Washington: https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.jpg
+
 Water pollution in the United States: https://www.epa.gov/waterdata/waters-geospatial-data-downloads
+
 Land cover in the United States and by individual state: https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis/gap/science/land-cover-data-download?qt-science_center_objects=0#qt-science_center_objects
