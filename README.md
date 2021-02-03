@@ -1,8 +1,8 @@
 # Water Pollution and Land Use
 
 1. I want to design a map that examines water pollution,
-2.      because I want to find out how human development impacts such a critical resource,
-3.          in order to help the map user identify the areas of most concern when considering water pollution.
+2. because I want to find out how human development impacts such a critical resource,
+3. in order to help the map user identify the areas of most concern when considering water pollution.
 
 Data
 Water pollution in Washington: https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.jpg
