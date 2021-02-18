@@ -5,6 +5,6 @@ This project explores the connection between the kinds of human activity that oc
 
 
 Datasets:
-Water pollution: [Image](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.jpg) [Metadata](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent_305b.htm) [Direct link](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.zip)
+Water pollution: [Image](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.jpg) - [Metadata](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent_305b.htm) - [Direct link](https://fortress.wa.gov/ecy/gispublic/DataDownload/WQ_ENV_WQAssessmentCurrent.zip)
 
-Land use: [Image](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.jpg) [Metadata](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.htm) [Direct link](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.zip)
+Land use: [Image](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.jpg) - [Metadata](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.htm) - [Direct link](https://fortress.wa.gov/ecy/gispublic/DataDownload/ECY_CAD_Landuse2010.zip)
