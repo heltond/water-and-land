@@ -1,3 +1,5 @@
+## How Land Development Affects Water Pollution
+
 ### I. Introduction
 
 Pollution is an inevitable byproduct of human activity. It is with less certainty, however, that we can speak to the nature of either without understanding the specific causal relationships that govern the creation of human-produced pollution. To that end, documenting pollution can be instructive in determining where it is likely to occur, and in what form, leading into answers for greater questions about prevention and restoration. One organization of many conducting such research is the Washington State Department of Ecology, whose publicly available studies into water pollution and land use in the state of Washington have provided the bulk of the data necessary to create this map.
