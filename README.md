@@ -22,11 +22,11 @@ The map will be a browser-based application that is compatible with mobile forma
 
 #### C. Application layout
 
-![Image of proposed layout](data/standard_view.png)
+![Image of proposed layout](standard_view.png)
 
-![Image of proposed layout](data/condensed_view.png)
+![Image of proposed layout](condensed_view.png)
 
-![Image of proposed layout](data/mobile_view.png)
+![Image of proposed layout](mobile_view.png)
 
 #### D. Thematic representation
 
