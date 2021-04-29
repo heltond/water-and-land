@@ -26,23 +26,91 @@
         #info {
             width: 300px;
             border: 5px solid gray;
+            background: rgba(244, 244, 244, 0.8);
             background-color: #A9A9A9;
+            color: rgba(20, 20, 20, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            height: 33vh;
             padding: 10px;
             margin: 20px;
+            z-index: 9000;
+            position: absolute;
+            bottom: -10px;
             visibility: hidden;
             /* margin needs to be distanced from button! padding is inside the box */
         }
 
-        .county {
-            fill: blue;
-            stroke: #eb7f86;
+        #info div {
+            padding: 10px;
         }
 
-        .state {
-            fill: none;
-            stroke: black;
+        #info h2 {
+            font-size: 1.3em;
+            margin: 0 0 5px 0;
         }
-    </style>
+
+        #info-button {
+            padding: 8px 5px;
+            border: 2px solid rgba(244, 244, 244, 0.2);
+            background: gray;
+            border-radius: 5px;
+            position: fixed;
+            top: 12px;
+            left: 150px;
+            z-index: 9999;
+            cursor: pointer;
+            font-size: 0;
+            line-height: 19.5px;
+            color: white;
+        }
+
+        #info-button:hover {
+            background: #ADD8E6;
+            color: black;
+            font-size: 13px;
+        }
+
+        #readme {
+            padding: 8px 5px;
+            border: 2px solid rgba(244, 244, 244, 0.2);
+            background: gray;
+            border-radius: 5px;
+            position: fixed;
+            top: 12px;
+            left: 50px;
+            z-index: 9999;
+            cursor: pointer;
+            font-size: 0;
+            line-height: 19.5px;
+        }
+
+        #readme:hover {
+            background: #ADD8E6;
+            color: black;
+            font-size: 13px;
+        }
+
+        #source {
+            padding: 8px 5px;
+            border: 2px solid rgba(244, 244, 244, 0.2);
+            background: gray;
+            border-radius: 5px;
+            position: fixed;
+            top: 12px;
+            left: 250px;
+            z-index: 9999;
+            cursor: pointer;
+            font-size: 0;
+            line-height: 19.5px;
+        }
+
+        #source:hover {
+            background: #ADD8E6;
+            color: black;
+            font-size: 13px;
+        }
+
+     </style>
 
 </head>
 
@@ -50,11 +118,19 @@
 
     <div id='map'></div>
 
+    <a id="readme" title="About the project" href="https://github.com/heltond/water-and-land"><img
+            src="information.svg"> Learn more</a>
+    <button id="info-button" title="Information" onclick="myInfo()"><img src="about.svg"> About</button>
+    <a id="source" href="https://ecology.wa.gov/Research-Data/Data-resources/Geographic-Information-Systems-GIS/Data"
+        title="Data source"><img src="data-link.svg"> Link to data</a>
+
     <div id='info'>
-        <h2 class="text-dark">About this map</h2>
-        <p class="text-dark">
-            This map compares water pollution and land use in Washington.
-        </p>
+        <div>
+            <h2 class="text-dark">About this map</h2>
+            <p class="text-dark">
+                This map compares water pollution and land use in Washington.
+            </p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -75,6 +151,28 @@
     <script src="https://d3js.org/d3.v5.js"></script>
     <script src="https://unpkg.com/topojson@3"></script>
     <script src='water_land.js'></script>
+
+    <script>
+
+
+        var clicked = false
+        function myInfo() {
+
+            var x = document.getElementById('info');
+            var y = document.getElementById('info-button');
+            if (clicked) {
+                y.style.background = 'gray';
+                x.style.visibility = 'hidden';
+            } else {
+                y.style.background = '#ADD8E6'
+                x.style.visibility = 'visible';
+            }
+            clicked = !clicked
+
+        }
+
+
+    </script>
 
 </body>
 
