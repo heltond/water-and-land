@@ -73,7 +73,7 @@
     .attr("id", "svg")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 " + width + " " + height);
+    .attr("viewBox", "0 0 780 408");
     
     const overlapGeoJson = d3.json('overlap_wria.geojson')
 
@@ -135,7 +135,7 @@
     .attr("id", "svg")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 " + width + " " + height);
+    .attr("viewBox", "0 0 780 408");
  
     const overlapGeoJson = d3.json('overlap_wria.geojson')
 
@@ -197,7 +197,7 @@
     .attr("id", "svg")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 " + width + " " + height);
+    .attr("viewBox", "0 0 780 408");
  
     const overlapGeoJson = d3.json('overlap_wria.geojson')
 
