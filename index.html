@@ -19,9 +19,35 @@
         #map {
             position: absolute;
             top: 0;
-            bottom: 0;
-            width: 100%;
+            left: 0;
+            height: 50%;
+            width: 50%;
         }
+
+        #map2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50%;
+            width: 50%;
+        }
+
+        #map3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 50%;
+            width: 50%;
+        }
+
+        #map4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 50%;
+            width: 50%;
+        }
+
 
         #info {
             width: 300px;
@@ -35,9 +61,8 @@
             margin: 20px;
             z-index: 9000;
             position: absolute;
-            bottom: -10px;
+            top: 50px;
             visibility: hidden;
-            /* margin needs to be distanced from button! padding is inside the box */
         }
 
         #info div {
@@ -117,6 +142,9 @@
 <body>
 
     <div id='map'></div>
+    <div id='map2'></div>
+    <div id='map3'></div>
+    <div id='map4'></div>
 
     <a id="readme" title="About the project" href="https://github.com/heltond/water-and-land"><img
             src="information.svg"> Learn more</a>
