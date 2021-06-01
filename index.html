@@ -61,6 +61,13 @@
             width: 50%;
         }
 
+        #label {
+            font-size: 2em;
+            color: black;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
 
         #info {
             width: 300px;
@@ -148,16 +155,23 @@
             font-size: 13px;
         }
 
+        .checkbox {
+            padding: 5px 5px;
+            background: #F8F8FF;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
      </style>
 
 </head>
 
 <body>
 
-    <div id='map'></div>
-    <div id='map2'></div>
-    <div id='map3'></div>
-    <div id='map4'></div>
+    <div id='map'><div id ='label'>Residential</div></div>
+    <div id='map2'><div id ='label'>Production</div></div>
+    <div id='map3'><div id ='label'>Recreational</div></div>
+    <div id='map4'><div id ='label'>Undeveloped</div></div>
 
     <a id="readme" title="About the project" href="https://github.com/heltond/water-and-land"><img
             src="images/information.svg"> Learn more</a>

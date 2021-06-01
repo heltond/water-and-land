@@ -298,7 +298,8 @@
         .attr('height', height)
         .classed('position-absolute', true)
         .style('top', '10px')
-        .style('right', '30px');
+        .style('right', '30px')
+        .style('border', '5px');
 
     function drawLegend() {
         mapUi.html(`<div id='mapUi'>
