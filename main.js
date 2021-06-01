@@ -6,14 +6,14 @@
     const height = mapContainer.node().offsetHeight - 60;
 
     const svg = mapContainer
-    .append("div")
-    .attr("id", "svg")
-    .append("svg")
-    .attr("height", "100%")
-    .attr("width", "100%")
-    .attr("viewBox", "0 0 780 408")
-    .attr("preserveAspectRatio", "xMidYMid");
- 
+        .append("div")
+        .attr("id", "svg")
+        .append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 780 408")
+        .attr("preserveAspectRatio", "xMidYMid");
+
     const overlapGeoJson = d3.json('data/overlap_wria.geojson')
 
     Promise.all([overlapGeoJson]).then(getData);
@@ -39,18 +39,18 @@
         const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
         const projection = d3.geoAlbers()
-        .center([0, 47.5])
-        .rotate([120, 0])
-        .scale(5250)
+            .center([0, 47.5])
+            .rotate([120, 0])
+            .scale(5250)
 
         const path = d3.geoPath()
             .projection(projection);
 
-            var b = path.bounds(overlapData),
-      t = [408, height / (780 / 408)];
+        var b = path.bounds(overlapData),
+            t = [408, height / (780 / 408)];
 
-  projection
-      .translate(t);
+        projection
+            .translate(t);
 
         const counties = svg.append('g')
             .selectAll('path')
@@ -75,14 +75,14 @@
     const height = mapContainer.node().offsetHeight - 60;
 
     const svg = mapContainer
-    .append("div")
-    .attr("id", "svg")
-    .append("svg")
-    .attr("height", "100%")
-    .attr("width", "100%")
-    .attr("viewBox", "0 0 780 408")
-    .attr("preserveAspectRatio", "xMidYMid");
- 
+        .append("div")
+        .attr("id", "svg")
+        .append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 780 408")
+        .attr("preserveAspectRatio", "xMidYMid");
+
     const overlapGeoJson = d3.json('data/overlap_wria.geojson')
 
     Promise.all([overlapGeoJson]).then(getData);
@@ -108,18 +108,18 @@
         const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
         const projection = d3.geoAlbers()
-        .center([0, 47.5])
-        .rotate([120, 0])
-        .scale(5250)
+            .center([0, 47.5])
+            .rotate([120, 0])
+            .scale(5250)
 
         const path = d3.geoPath()
             .projection(projection);
 
-            var b = path.bounds(overlapData),
-      t = [408, height / (780 / 408)];
+        var b = path.bounds(overlapData),
+            t = [408, height / (780 / 408)];
 
-  projection
-      .translate(t);
+        projection
+            .translate(t);
 
         const counties = svg.append('g')
             .selectAll('path')
@@ -144,14 +144,14 @@
     const height = mapContainer.node().offsetHeight - 60;
 
     const svg = mapContainer
-    .append("div")
-    .attr("id", "svg")
-    .append("svg")
-    .attr("height", "100%")
-    .attr("width", "100%")
-    .attr("viewBox", "0 0 780 408")
-    .attr("preserveAspectRatio", "xMidYMid");
- 
+        .append("div")
+        .attr("id", "svg")
+        .append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 780 408")
+        .attr("preserveAspectRatio", "xMidYMid");
+
     const overlapGeoJson = d3.json('data/overlap_wria.geojson')
 
     Promise.all([overlapGeoJson]).then(getData);
@@ -177,18 +177,18 @@
         const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
         const projection = d3.geoAlbers()
-        .center([0, 47.5])
-        .rotate([120, 0])
-        .scale(5250)
+            .center([0, 47.5])
+            .rotate([120, 0])
+            .scale(5250)
 
         const path = d3.geoPath()
             .projection(projection);
 
-            var b = path.bounds(overlapData),
-      t = [408, height / (780 / 408)];
+        var b = path.bounds(overlapData),
+            t = [408, height / (780 / 408)];
 
-  projection
-      .translate(t);
+        projection
+            .translate(t);
 
         const counties = svg.append('g')
             .selectAll('path')
@@ -213,14 +213,14 @@
     const height = mapContainer.node().offsetHeight - 60;
 
     const svg = mapContainer
-    .append("div")
-    .attr("id", "svg")
-    .append("svg")
-    .attr("height", "100%")
-    .attr("width", "100%")
-    .attr("viewBox", "0 0 780 408")
-    .attr("preserveAspectRatio", "xMidYMid");
- 
+        .append("div")
+        .attr("id", "svg")
+        .append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 780 408")
+        .attr("preserveAspectRatio", "xMidYMid");
+
     const overlapGeoJson = d3.json('data/overlap_wria.geojson')
 
     Promise.all([overlapGeoJson]).then(getData);
@@ -246,18 +246,18 @@
         const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
         const projection = d3.geoAlbers()
-        .center([0, 47.5])
-        .rotate([120, 0])
-        .scale(5250)
+            .center([0, 47.5])
+            .rotate([120, 0])
+            .scale(5250)
 
         const path = d3.geoPath()
             .projection(projection);
 
-            var b = path.bounds(overlapData),
-      t = [408, height / (780 / 408)];
+        var b = path.bounds(overlapData),
+            t = [408, height / (780 / 408)];
 
-  projection
-      .translate(t);
+        projection
+            .translate(t);
 
         const counties = svg.append('g')
             .selectAll('path')
@@ -282,13 +282,13 @@
     const height = mapContainer.node().offsetHeight - 60;
 
     const svg = mapContainer
-    .append("div")
-    .attr("id", "svg")
-    .append("svg")
-    .attr("height", "100%")
-    .attr("width", "100%")
-    .attr("viewBox", "0 0 780 408")
-    .attr("preserveAspectRatio", "xMidYMid");
+        .append("div")
+        .attr("id", "svg")
+        .append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 780 408")
+        .attr("preserveAspectRatio", "xMidYMid");
 
     const mapUiContainer = d3.select('#map2')
 
@@ -306,7 +306,7 @@
         <div><input type="checkbox" name="pollutant" id="Ammonia-N"><label>Ammonia</label></div>
         <div><input type="checkbox" name="pollutant" id="Arsenic"><label>Arsenic</label></div>
         <div><input type="checkbox" name="pollutant" id="Copper"><label>Copper</label></div>
-        <div><input type="checkbox" name="pollutant" id="Polychlorinated Biphenyls (PCBs)"><label>PCBs</label></div>
+        <div><input type="checkbox" name="pollutant" id="PCBs"><label>PCBs</label></div>
         <div><input type="checkbox" name="pollutant" id="Zinc"><label>Zinc</label></div>        
       </select>
     </div>
@@ -314,7 +314,7 @@
     }
 
     drawLegend();
- 
+
     const pollutionGeoJson = d3.json('data/pollution.geojson')
 
     Promise.all([pollutionGeoJson]).then(getData);
@@ -323,73 +323,93 @@
 
         const pollutionData = data[0]
 
-        
+        var ammoniaFlag = false
+        var arsenicFlag = false
+        var copperFlag = false
+        var pcbFlag = false
+        var zincFlag = false
 
-        const setArray = []
+        d3.select('#Ammonia-N').on('change', function () {
+            ammoniaFlag = !ammoniaFlag;
+            createArray();
+        });
 
-        var ammoniaFlag = true
-        var arsenicFlag = true
+        d3.select('#Arsenic').on('change', function () {
+            arsenicFlag = !arsenicFlag;
+            createArray();
+        });
 
-            d3.select('#Ammonia-N').on('change', function () {
-                
-                if (ammoniaFlag == true) {
-                    const pollutionArray = []
-                    for (let x of pollutionData.features) {
+        d3.select('#Copper').on('change', function () {
+            copperFlag = !copperFlag;
+            createArray();
+        });
+
+        d3.select('#PCBs').on('change', function () {
+            pcbFlag = !pcbFlag;
+            createArray();
+        });
+
+        d3.select('#Zinc').on('change', function () {
+            zincFlag = !zincFlag;
+            createArray();
+        });
+
+        function createArray() {
+            svg.select('g').remove();
+            const pollutionArray = []
+            if (ammoniaFlag == true) {
+
+                for (let x of pollutionData.features) {
                     if (x.properties.ParameterName == "Ammonia-N") {
-                        setArray.push(x);
-                        (pollutionArray.features) = setArray;
-                    }
-                }
-                ammoniaFlag = !ammoniaFlag;
-                drawMap(pollutionArray)
-                }
-                else {
-                                        
-                    for (let x of pollutionData.features) {
-                        if (x.properties.ParameterName == "Ammonia-N") {
-                            svg.select('g').remove();
-                        }
-                    }
-                    ammoniaFlag = !ammoniaFlag;
-                    (setArray.features) = setArray.filter(value => value.properties.ParameterName !== "Ammonia-N")
-                            drawMap(setArray)
-                }
-                 
-                
-            });  
+                        pollutionArray.push(x);
 
-            d3.select('#Arsenic').on('change', function () {
-                
-                if (arsenicFlag == true) {
-                    const pollutionArray = []
-                    for (let x of pollutionData.features) {
+                    }
+                }
+            }
+
+            if (arsenicFlag == true) {
+
+                for (let x of pollutionData.features) {
                     if (x.properties.ParameterName == "Arsenic") {
-                        setArray.push(x);
-                        (pollutionArray.features) = setArray;
+                        pollutionArray.push(x);
+
                     }
                 }
-                arsenicFlag = !arsenicFlag;
-                console.log(pollutionArray)
-                drawMap(pollutionArray)
-                }
-                else {
-                    var changeArray = [];                    
-                    for (let x of pollutionData.features) {
-                        if (x.properties.ParameterName == "Arsenic") {
-                            svg.select('g').remove();
-                            
-                        }
-                        
+            }
+
+            if (copperFlag == true) {
+
+                for (let x of pollutionData.features) {
+                    if (x.properties.ParameterName == "Copper") {
+                        pollutionArray.push(x);
+
                     }
-                    arsenicFlag = !arsenicFlag;
-                    
-                    (setArray.features) = setArray.filter(value => value.properties.ParameterName !== "Arsenic");
-                            drawMap(setArray)
                 }
-                
-            });  
-            
-        
+            }
+
+            if (pcbFlag == true) {
+
+                for (let x of pollutionData.features) {
+                    if (x.properties.ParameterName == "Polychlorinated Biphenyls (PCBs)") {
+                        pollutionArray.push(x);
+
+                    }
+                }
+            }
+
+            if (zincFlag == true) {
+
+                for (let x of pollutionData.features) {
+                    if (x.properties.ParameterName == "Zinc") {
+                        pollutionArray.push(x);
+
+                    }
+                }
+            }
+            drawMap(pollutionArray)
+            console.log(pollutionArray)
+        }
+
     }
 
     function drawMap(data) {
@@ -397,22 +417,22 @@
         const pollutionData = data;
 
         const projection = d3.geoAlbers()
-        .center([0, 47.5])
-        .rotate([120, 0])
-        .scale(5250)
+            .center([0, 47.5])
+            .rotate([120, 0])
+            .scale(5250)
 
         const path = d3.geoPath()
             .projection(projection);
 
-            var b = path.bounds(pollutionData),
-      t = [408, height / (780 / 408)];
+        var b = path.bounds(pollutionData),
+            t = [408, height / (780 / 408)];
 
-  projection
-      .translate(t);
+        projection
+            .translate(t);
 
         const counties = svg.append('g')
             .selectAll('path')
-            .data(pollutionData.features)
+            .data(pollutionData)
             .join('path')
             .attr('d', path)
             .attr("stroke", "black")
