@@ -408,7 +408,6 @@
                 }
             }
             drawMap(pollutionArray)
-            console.log(pollutionArray)
         }
 
     }
