@@ -33,12 +33,12 @@
     projection
         .translate(t);
 
-        function checkMaps() {
-            mapContainer.selectAll('svg').remove()
-            mapContainer2.selectAll('svg').remove()
-            mapContainer3.selectAll('svg').remove()
-            mapContainer4.selectAll('svg').remove()
-        }
+    function checkMaps() {
+        mapContainer.selectAll('svg').remove()
+        mapContainer2.selectAll('svg').remove()
+        mapContainer3.selectAll('svg').remove()
+        mapContainer4.selectAll('svg').remove()
+    }
 
     function createMaps() {
 
@@ -57,7 +57,7 @@
     createMaps()
 
     function residential(data) {
-        
+
         const svg = mapContainer
             .append("div")
             .attr("id", "svg")
@@ -97,7 +97,7 @@
                 .attr("stroke", "black")
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
-                    return color(d.properties[landType]);
+                        return color(d.properties[landType]);
                     }
                     else if (d.properties[landType] == -1) {
                         return 'yellow';
@@ -112,16 +112,16 @@
                 .style("opacity", d => {
                     if (d.properties[landType] > 0) {
                         return 1;
-                        }
-                        else if (d.properties[landType] == -1) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -2) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -3) {
-                            return 0.2;
-                        }
+                    }
+                    else if (d.properties[landType] == -1) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -2) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -3) {
+                        return 0.2;
+                    }
                 });
 
         }
@@ -168,7 +168,7 @@
                 .attr("stroke", "black")
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
-                    return color(d.properties[landType]);
+                        return color(d.properties[landType]);
                     }
                     else if (d.properties[landType] == -1) {
                         return 'yellow';
@@ -183,16 +183,16 @@
                 .style("opacity", d => {
                     if (d.properties[landType] > 0) {
                         return 1;
-                        }
-                        else if (d.properties[landType] == -1) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -2) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -3) {
-                            return 0.2;
-                        }
+                    }
+                    else if (d.properties[landType] == -1) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -2) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -3) {
+                        return 0.2;
+                    }
                 });
 
         }
@@ -239,7 +239,7 @@
                 .attr("stroke", "black")
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
-                    return color(d.properties[landType]);
+                        return color(d.properties[landType]);
                     }
                     else if (d.properties[landType] == -1) {
                         return 'yellow';
@@ -254,16 +254,16 @@
                 .style("opacity", d => {
                     if (d.properties[landType] > 0) {
                         return 1;
-                        }
-                        else if (d.properties[landType] == -1) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -2) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -3) {
-                            return 0.2;
-                        }
+                    }
+                    else if (d.properties[landType] == -1) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -2) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -3) {
+                        return 0.2;
+                    }
                 });
 
         }
@@ -310,7 +310,7 @@
                 .attr("stroke", "black")
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
-                    return color(d.properties[landType]);
+                        return color(d.properties[landType]);
                     }
                     else if (d.properties[landType] == -1) {
                         return 'yellow';
@@ -325,16 +325,16 @@
                 .style("opacity", d => {
                     if (d.properties[landType] > 0) {
                         return 1;
-                        }
-                        else if (d.properties[landType] == -1) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -2) {
-                            return 0.2;
-                        }
-                        else if (d.properties[landType] == -3) {
-                            return 0.2;
-                        }
+                    }
+                    else if (d.properties[landType] == -1) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -2) {
+                        return 0.2;
+                    }
+                    else if (d.properties[landType] == -3) {
+                        return 0.2;
+                    }
                 });
 
         }
@@ -347,22 +347,21 @@
     function getData(data) {
 
         const svg5 = mapContainer5
-        .append("div")
-        .attr("id", "svg")
-        .append("svg")
-        .attr("height", "100%")
-        .attr("width", "100%")
-        .attr("viewBox", xChange[0] + " " + xChange[1] + " " + xChange[2] + " " + xChange[3])
-        .attr("preserveAspectRatio", "xMidYMid")
+            .append("div")
+            .attr("id", "svg")
+            .append("svg")
+            .attr("height", "100%")
+            .attr("width", "100%")
+            .attr("viewBox", xChange[0] + " " + xChange[1] + " " + xChange[2] + " " + xChange[3])
+            .attr("preserveAspectRatio", "xMidYMid")
             .on("click", function () {
                 mapUi.remove()
                 checkMaps()
                 var abc = d3.mouse(this)
-                console.log(abc)
                 if (zoomFlag == true) {
                     if (abc[0] < 420 && abc[1] < 190) {
                         xChange = [150, 65, 200, 150]
-                        
+
                         createMaps()
                     }
                     else if (abc[0] < 420 && abc[1] > 190) {
@@ -499,7 +498,6 @@
                 }
             }
             drawMap(pollutionArray)
-console.log(pollutionArray)
         }
 
 
@@ -507,7 +505,7 @@ console.log(pollutionArray)
 
             const pollutionData = data;
 
-           const counties = svg5.append('g')
+            const counties = svg5.append('g')
                 .selectAll('path')
                 .data(pollutionData)
                 .join('path')
