@@ -33,6 +33,13 @@
     projection
         .translate(t);
 
+        function checkMaps() {
+            mapContainer.selectAll('svg').remove()
+            mapContainer2.selectAll('svg').remove()
+            mapContainer3.selectAll('svg').remove()
+            mapContainer4.selectAll('svg').remove()
+        }
+
     function createMaps() {
 
         Promise.all([overlapGeoJson]).then(residential);
@@ -349,12 +356,13 @@
         .attr("preserveAspectRatio", "xMidYMid")
             .on("click", function () {
                 mapUi.remove()
+                checkMaps()
                 var abc = d3.mouse(this)
                 console.log(abc)
                 if (zoomFlag == true) {
                     if (abc[0] < 420 && abc[1] < 190) {
                         xChange = [150, 65, 200, 150]
-
+                        
                         createMaps()
                     }
                     else if (abc[0] < 420 && abc[1] > 190) {
@@ -492,7 +500,6 @@
                 }
             }
             drawMap(pollutionArray)
-            
 console.log(pollutionArray)
         }
 
