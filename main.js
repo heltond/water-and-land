@@ -387,7 +387,6 @@
                     createMaps()
                 }
                 zoomFlag = !zoomFlag
-                console.log(zoomFlag)
             });
 
         const mapUi = mapUiContainer
