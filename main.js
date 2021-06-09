@@ -14,7 +14,7 @@
     const mapContainer3 = d3.select('#map3')
     const mapContainer4 = d3.select('#map4')
     const mapContainer5 = d3.selectAll('#map, #map2, #map3, #map4')
-    const mapUiContainer = d3.select('#map2')
+    const mapUiContainer = d3.select('body')
 
     const width = mapContainer.node().offsetWidth - 60;
     const height = mapContainer.node().offsetHeight - 60;
@@ -27,8 +27,7 @@
     var path = d3.geoPath()
         .projection(projection);
 
-    var b = path.bounds(overlapGeoJson),
-        t = [408, height / (780 / 408)];
+    var t = [408, height / (780 / 408)];
 
     projection
         .translate(t);
