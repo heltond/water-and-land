@@ -22,12 +22,6 @@ The map will be a browser-based application that is compatible with mobile forma
 
 #### C. Application layout
 
-![Image of proposed layout](images/standard_view.png)
-
-![Image of proposed layout](images/condensed_view.png)
-
-![Image of proposed layout](images/mobile_view.png)
-
 #### D. Thematic representation
 
 This map uses a choropleth as a base. The choropleth colors counties by the proportional representation of selected land use types to display where land is most commonly devoted to a certain kind of land use. The color darkens as the percentage increases. Overlaid on top of the choropleth is polygonal vector data of the sites where water pollution has occurred. Thus, the audience can compare the location of the pollution site with the inclinations of the surrounding area.

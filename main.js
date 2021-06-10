@@ -84,7 +84,7 @@
                 }
             }
 
-            const wheel = ['#f7fbff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
+            const wheel = ['#ffffff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
@@ -94,6 +94,14 @@
                 .join('path')
                 .attr('d', path)
                 .attr("stroke", "black")
+                .attr("stroke-width", d => {
+                    if (zoomFlag == true) {
+                        return 1;
+                    }
+                    else {
+                        return 0.5;
+                    }
+                })
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
                         return color(d.properties[landType]);
@@ -155,7 +163,7 @@
                 }
             }
 
-            const wheel = ['#f7fbff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
+            const wheel = ['#ffffff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
@@ -165,6 +173,14 @@
                 .join('path')
                 .attr('d', path)
                 .attr("stroke", "black")
+                .attr("stroke-width", d => {
+                    if (zoomFlag == true) {
+                        return 1;
+                    }
+                    else {
+                        return 0.5;
+                    }
+                })
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
                         return color(d.properties[landType]);
@@ -226,7 +242,7 @@
                 }
             }
 
-            const wheel = ['#f7fbff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
+            const wheel = ['#ffffff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
@@ -236,6 +252,14 @@
                 .join('path')
                 .attr('d', path)
                 .attr("stroke", "black")
+                .attr("stroke-width", d => {
+                    if (zoomFlag == true) {
+                        return 1;
+                    }
+                    else {
+                        return 0.5;
+                    }
+                })
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
                         return color(d.properties[landType]);
@@ -297,7 +321,7 @@
                 }
             }
 
-            const wheel = ['#f7fbff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
+            const wheel = ['#ffffff', '#c8ddf0', '#73b3d8', '#2879b9', '#08306b']
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
@@ -307,6 +331,14 @@
                 .join('path')
                 .attr('d', path)
                 .attr("stroke", "black")
+                .attr("stroke-width", d => {
+                    if (zoomFlag == true) {
+                        return 1;
+                    }
+                    else {
+                        return 0.5;
+                    }
+                })
                 .attr("fill", d => {
                     if (d.properties[landType] > 0) {
                         return color(d.properties[landType]);
@@ -510,6 +542,14 @@
                 .join('path')
                 .attr('d', path)
                 .attr("stroke", "black")
+                .attr("stroke-width", d => {
+                    if (zoomFlag == true) {
+                        return 1;
+                    }
+                    else {
+                        return 0.5;
+                    }
+                })
                 .attr("fill", "blue")
 
         }
