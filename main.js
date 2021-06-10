@@ -1,6 +1,6 @@
 (function () {
 
-    var centerCoords = [0, 47.5]
+    var centerCoords = [0, 48]
     var mapScale = 5250
     var xChange = [0, 0, 780, 408]
 
