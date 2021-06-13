@@ -47,7 +47,7 @@
 
         Promise.all([overlapGeoJson]).then(recreational);
 
-       // Promise.all([overlapGeoJson]).then(undeveloped);
+        Promise.all([overlapGeoJson]).then(undeveloped);
 
         Promise.all([pollutionGeoJson]).then(getData);
 
@@ -536,8 +536,6 @@
 
             const pollutionData = data;
 
-            console.log("test")
-
             const counties = svg5.append('g')
                 .selectAll('path')
                 .data(pollutionData)
@@ -553,6 +551,7 @@
                     }
                 })
                 .attr("fill", "blue")
+                .attr("z-index", "2")
 
         }
     }
