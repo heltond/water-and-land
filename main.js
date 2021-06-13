@@ -536,6 +536,8 @@
 
             const pollutionData = data;
 
+            console.log("test")
+
             const counties = svg5.append('g')
                 .selectAll('path')
                 .data(pollutionData)
