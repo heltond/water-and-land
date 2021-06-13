@@ -385,6 +385,7 @@
             .attr("width", "100%")
             .attr("viewBox", xChange[0] + " " + xChange[1] + " " + xChange[2] + " " + xChange[3])
             .attr("preserveAspectRatio", "xMidYMid")
+            .attr("z-index", 2)
             .on("click", function () {
                 mapUi.remove()
                 checkMaps()
