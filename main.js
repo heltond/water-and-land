@@ -88,7 +88,7 @@
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
-            const counties = svg.append('g')
+            svg.append('g')
                 .selectAll('path')
                 .data(overlapData.features)
                 .join('path')
@@ -167,7 +167,7 @@
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
-            const counties = svg2.append('g')
+            svg2.append('g')
                 .selectAll('path')
                 .data(overlapData.features)
                 .join('path')
@@ -246,7 +246,7 @@
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
-            const counties = svg3.append('g')
+            svg3.append('g')
                 .selectAll('path')
                 .data(overlapData.features)
                 .join('path')
@@ -325,7 +325,7 @@
 
             const color = d3.scaleQuantile().domain(myArray).range(wheel)
 
-            const counties = svg4.append('g')
+            svg4.append('g')
                 .selectAll('path')
                 .data(overlapData.features)
                 .join('path')
@@ -389,6 +389,7 @@
                 mapUi.remove()
                 checkMaps()
                 var abc = d3.mouse(this)
+                console.log(abc)
                 if (zoomFlag == true) {
                     if (abc[0] < 420 && abc[1] < 190) {
                         xChange = [150, 65, 200, 150]
@@ -536,7 +537,7 @@
 
             const pollutionData = data;
 
-            const counties = svg5.append('g')
+            svg5.append('g')
                 .selectAll('path')
                 .data(pollutionData)
                 .join('path')
@@ -551,7 +552,6 @@
                     }
                 })
                 .attr("fill", "blue")
-                .attr("z-index", "2")
 
         }
     }
