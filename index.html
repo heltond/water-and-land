@@ -95,19 +95,32 @@
             margin: 0 0 5px 0;
         }
 
+        #scroller {
+            padding: 8px 5px;
+            border: 2px solid rgba(244, 244, 244, 0.2);
+            background: gray;
+            position: fixed;
+            top: 12px;
+            left: 0;
+            z-index: 9999;
+            cursor: pointer;
+            line-height: 19.5px;
+            color: black;
+        }
+
         #info-button {
             padding: 8px 5px;
             border: 2px solid rgba(244, 244, 244, 0.2);
             background: gray;
-            border-radius: 5px;
             position: fixed;
             top: 12px;
-            left: 150px;
+            left: 137.9833px;
             z-index: 9999;
             cursor: pointer;
-            font-size: 0;
+            font-size: 13px;
             line-height: 19.5px;
             color: white;
+            visibility: hidden;
         }
 
         #info-button:hover {
@@ -120,14 +133,15 @@
             padding: 8px 5px;
             border: 2px solid rgba(244, 244, 244, 0.2);
             background: gray;
-            border-radius: 5px;
             position: fixed;
             top: 12px;
-            left: 50px;
+            left: 42.95px;
             z-index: 9999;
             cursor: pointer;
-            font-size: 0;
+            font-size: 13px;
             line-height: 19.5px;
+            color: white;
+            visibility: hidden;
         }
 
         #readme:hover {
@@ -140,20 +154,35 @@
             padding: 8px 5px;
             border: 2px solid rgba(244, 244, 244, 0.2);
             background: gray;
-            border-radius: 5px;
             position: fixed;
             top: 12px;
-            left: 250px;
+            left: 201.4166px;
             z-index: 9999;
             cursor: pointer;
-            font-size: 0;
+            font-size: 13px;
             line-height: 19.5px;
+            color: white;
+            visibility: hidden;
         }
 
         #source:hover {
             background: #ADD8E6;
             color: black;
             font-size: 13px;
+        }
+
+        #return {
+            padding: 8px 5px;
+            border: 2px solid rgba(244, 244, 244, 0.2);
+            background: gray;
+            position: fixed;
+            top: 12px;
+            left: 0;
+            z-index: 9999;
+            cursor: pointer;
+            line-height: 19.5px;
+            color: black;
+            visibility: hidden;
         }
 
         .checkbox {
@@ -167,6 +196,16 @@
             z-index: 2;
         }
 
+        #credit {
+            position: fixed;
+            bottom: 2px;
+            right: 3px;
+            font-size: 10px;
+            z-index: 9999;
+            color: black;
+            background: #add8e6;
+        }
+
      </style>
 
 </head>
@@ -178,6 +217,8 @@
     <div id='map3'><div id ='label'>Recreational</div></div>
     <div id='map4'><div id ='label'>Undeveloped</div></div>
 
+    <a id="scroller" onclick="scroller()">More >>></a>
+    <a id="return" onclick="scroller()">Back</a>
     <a id="readme" title="About the project" href="https://github.com/heltond/water-and-land"><img
             src="images/information.svg"> Learn more</a>
     <button id="info-button" title="Information" onclick="myInfo()"><img src="images/about.svg"> About</button>
@@ -196,6 +237,9 @@
         </div>
     </div>
 
+    <div id="credit">Daniel Helton | <a href="https://newmapsplus.as.uky.edu/">New Maps Plus</a> | Made with <a href="https://www.qgis.org/en/site/">QGIS</a>, 
+        <a href="https://jupyter.org/">Jupyter</a>, and <a href="https://d3js.org/">D3</a></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -206,6 +250,31 @@
     <script src='main.js'></script>
 
     <script>
+        var scrollerClick = false
+        function scroller() {
+            scrollerClick = !scrollerClick
+            var x = document.getElementById('readme');
+            var y = document.getElementById('info-button');
+            var z = document.getElementById('source');
+            var xyz = document.getElementById('scroller');
+            var abc = document.getElementById('return');
+            if (scrollerClick) {
+                x.style.visibility = 'visible';
+                y.style.visibility = 'visible';
+                z.style.visibility = 'visible';
+                xyz.style.visibility = 'hidden';
+                abc.style.visibility = 'visible';
+            } else {
+                x.style.visibility = 'hidden';
+                y.style.visibility = 'hidden';
+                z.style.visibility = 'hidden';
+                xyz.style.visibility = 'visible';
+                abc.style.visibility = 'hidden';
+            }
+
+
+            
+        }
 
 
         var clicked = false
