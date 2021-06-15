@@ -258,6 +258,7 @@
             var z = document.getElementById('source');
             var xyz = document.getElementById('scroller');
             var abc = document.getElementById('return');
+            var info = document.getElementById('info');
             if (scrollerClick) {
                 x.style.visibility = 'visible';
                 y.style.visibility = 'visible';
@@ -267,9 +268,12 @@
             } else {
                 x.style.visibility = 'hidden';
                 y.style.visibility = 'hidden';
+                y.style.background = 'gray';
                 z.style.visibility = 'hidden';
                 xyz.style.visibility = 'visible';
                 abc.style.visibility = 'hidden';
+                info.style.visibility = 'hidden';
+                clicked = false;
             }
 
 
