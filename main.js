@@ -61,8 +61,6 @@
 
     function residential(data) {
 
-        console.log("done1")
-
         const svg = mapContainer
             .append("div")
             .attr("id", "svg")
@@ -144,8 +142,6 @@
 
     function production(data) {
 
-        console.log("done2")
-
         const svg2 = mapContainer2
             .append("div")
             .attr("id", "svg")
@@ -226,8 +222,6 @@
 
     function recreational(data) {
 
-        console.log("done3")
-
         const svg3 = mapContainer3
             .append("div")
             .attr("id", "svg")
@@ -307,8 +301,6 @@
     };
 
     function undeveloped(data) {
-
-        console.log("done4")
 
         const svg4 = mapContainer4
             .append("div")
@@ -394,8 +386,6 @@
 
 
     function getData(data) {
-
-        console.log("done5")
 
         const svg5 = mapContainer5
             .append("div")
