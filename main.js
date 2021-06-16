@@ -45,11 +45,9 @@
 
         Promise.all([overlapGeoJson]).then(production);
 
-        Promise.all([overlapGeoJson]).then(recreational);
+    //    Promise.all([overlapGeoJson]).then(recreational);
 
-    //    Promise.all([overlapGeoJson]).then(undeveloped);
-
-        polData();
+        Promise.all([overlapGeoJson]).then(undeveloped);
 
     }
 
@@ -387,6 +385,8 @@
                 });
 
         }
+
+        polData();
 
     };
 
