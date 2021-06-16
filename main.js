@@ -47,7 +47,7 @@
 
         Promise.all([overlapGeoJson]).then(recreational);
 
-        Promise.all([overlapGeoJson]).then(undeveloped);
+    //    Promise.all([overlapGeoJson]).then(undeveloped);
 
         polData();
 
@@ -56,7 +56,7 @@
     function polData() {
 
         Promise.all([pollutionGeoJson]).then(getData);
-        
+
     }
 
     createMaps()
