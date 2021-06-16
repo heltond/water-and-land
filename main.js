@@ -64,7 +64,11 @@
             .attr("height", "100%")
             .attr("width", "100%")
             .attr("viewBox", xChange[0] + " " + xChange[1] + " " + xChange[2] + " " + xChange[3])
-            .attr("preserveAspectRatio", "xMidYMid");
+            .attr("preserveAspectRatio", "xMidYMid")
+            .on("mouseenter", function() {
+                d3.select(this).lower(); 
+            });
+            
         mapData = data[0]
         getData(mapData);
 
