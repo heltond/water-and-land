@@ -18,7 +18,7 @@ To begin, Jupyter was used to analyze the water pollution and land use data. Bec
 
 #### B. Medium for delivery
 
-The map will be a browser-based application that is compatible with mobile formats and best suited for desktop use. The page will be built primarily with HTML, CSS, and JavaScript. Leaflet and D3 are mapping tools that interpret the data and turn it into an interactive and dynamic mapping project. Bootstrap will be used to provide the page with a visual framework.
+The map is a browser-based application that is compatible with mobile formats and best suited for desktop use. The page was built primarily with HTML, CSS, and JavaScript. Leaflet and D3 are mapping tools that interpret the data and turn it into an interactive and dynamic mapping project. Bootstrap will be used to provide the page with a visual framework.
 
 #### C. Application layout
 
@@ -28,13 +28,13 @@ This map uses a choropleth as a base. The choropleth colors counties by the prop
 
 #### E. User interaction
 
-The user will be provided with two menus with which to change the data displayed on the map, one for pollutants and one for land. Toggling the pollutant will change the displayed sites to match the ones where the desired pollutant was found. Toggling the land type will change the choropleth to reflect the presence of the land type in each county region.
+The user is provided with a menu with which to change the pollution data displayed on the map. Toggling the pollutant changes the displayed sites to match the ones where the desired pollutant was found.
 
-By hovering over a county, a pop-up will appear with statistics pertaining to the county's land use. A button near the top of the webpage will reveal a text box that explains the purpose and use of the map. Several external links to data and code sources will also be provided. The user will be restricted from zooming in or out, and the map will remain within boundaries where the state remains visible.
+A button near the top of the webpage reveals a text box that explains the purpose and use of the map. Several external links to data and code sources are also provided. The user is restricted from zooming in or out, and the map will remain within boundaries where the state remains visible.
 
 #### F. Aesthetics and design consideration
 
-The map will be built to have a straight-forward design that minimizes clutter and presents detailed information on the user's request. Because the focus is more on investigating relationships rather than proving or disproving a hypothesis, the map should be focused on providing the user with a way to access their desired information as simply and directly as possible. The choropleth is blue because blue is commonly associated with water, and the color does not obscure the pollutants that appear in front, which are polygonal but resemble lines and points at normal zoom levels and are therefore not stylized extensively.
+The map has been built to have a straight-forward design that minimizes clutter and presents detailed information on the user's request. Because the focus is more on investigating relationships rather than proving or disproving a hypothesis, the map should be focused on providing the user with a way to access their desired information as simply and directly as possible. The choropleth is blue because blue is commonly associated with water, and the color does not obscure the pollutants that appear in front, which are polygonal but resemble lines and points at normal zoom levels and are therefore not stylized extensively.
 
 #### G. Conclusion
 
