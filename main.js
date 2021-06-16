@@ -391,26 +391,21 @@
                 mapUi.remove()
                 checkMaps()
                 var abc = d3.mouse(this)
-                console.log(abc)
                 if (zoomFlag == true) {
                     if (abc[0] < 370 && abc[1] < 220) {
                         xChange = [150, 95, 200, 150]
-
                         createMaps()
                     }
                     else if (abc[0] < 370 && abc[1] > 220) {
                         xChange = [150, 265, 200, 150]
-
                         createMaps()
                     }
                     else if (abc[0] > 370 && abc[1] < 220) {
                         xChange = [375, 95, 200, 150]
-
                         createMaps()
                     }
                     else {
                         xChange = [375, 265, 200, 150]
-
                         createMaps()
                     }
                 }
