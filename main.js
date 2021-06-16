@@ -45,9 +45,9 @@
 
         Promise.all([overlapGeoJson]).then(production);
 
-     //   Promise.all([overlapGeoJson]).then(recreational);
+        Promise.all([overlapGeoJson]).then(recreational);
 
-        Promise.all([overlapGeoJson]).then(undeveloped);
+     //   Promise.all([overlapGeoJson]).then(undeveloped);
 
         Promise.all([pollutionGeoJson]).then(getData);
 
@@ -65,10 +65,7 @@
             .attr("width", "100%")
             .attr("viewBox", xChange[0] + " " + xChange[1] + " " + xChange[2] + " " + xChange[3])
             .attr("preserveAspectRatio", "xMidYMid")
-            .on("mouseenter", function() {
-                d3.select(this).lower(); 
-            });
-
+            .attr("z-index", "1")
         mapData = data[0]
         getData(mapData);
 
