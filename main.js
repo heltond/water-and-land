@@ -45,9 +45,9 @@
 
         Promise.all([overlapGeoJson]).then(production);
 
-        Promise.all([overlapGeoJson]).then(recreational);
+     //   Promise.all([overlapGeoJson]).then(recreational);
 
-     //   Promise.all([overlapGeoJson]).then(undeveloped);
+        Promise.all([overlapGeoJson]).then(undeveloped);
 
         Promise.all([pollutionGeoJson]).then(getData);
 
@@ -68,7 +68,7 @@
             .on("mouseenter", function() {
                 d3.select(this).lower(); 
             });
-            
+
         mapData = data[0]
         getData(mapData);
 
