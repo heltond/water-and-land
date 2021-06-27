@@ -77,10 +77,9 @@
             background-color: #A9A9A9;
             color: rgba(20, 20, 20, 0.8);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            height: 33vh;
             padding: 10px;
             margin: 20px;
-            z-index: 9000;
+            z-index: 9999;
             position: absolute;
             top: 50px;
             visibility: hidden;
@@ -93,6 +92,10 @@
         #info h2 {
             font-size: 1.3em;
             margin: 0 0 5px 0;
+        }
+
+        #info a {
+            color: blue;
         }
 
         #scroller {
@@ -206,16 +209,186 @@
             background: #add8e6;
         }
 
-     </style>
+        #legend {
+            background: #ffffff;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            height: 25px;
+            width: 25px;
+            z-index: 9000;
+            font-size: 0.7em;
+            color: black;
+        }
+
+        #legend2 {
+            background: #c8ddf0;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 5px;
+            left: 29px;
+            height: 25px;
+            width: 25px;
+            z-index: 9000;
+            font-size: 0.7em;
+            color: black;
+        }
+
+        #legend3 {
+            background: #73b3d8;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 5px;
+            left: 53px;
+            height: 25px;
+            width: 25px;
+            z-index: 9000;
+            font-size: 0.7em;
+            color: black;
+        }
+
+        #legend4 {
+            background: #2879b9;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 5px;
+            left: 77px;
+            height: 25px;
+            width: 25px;
+            z-index: 9000;
+            font-size: 0.7em;
+            color: black;
+        }
+
+        #legend5 {
+            background: #08306b;
+            border: 1px solid black;
+            position: absolute;
+            bottom: 5px;
+            left: 101px;
+            height: 25px;
+            width: 25px;
+            z-index: 9000;
+            font-size: 0.7em;
+            color: white;
+        }
+
+        #min-percent {
+            position: absolute;
+            bottom: 30px;
+            left: 5px;
+            font-size: 0.8em;
+            color: black
+            z-index: 9000;
+        }
+
+        #title {
+            background: #F8F8FF;
+            color: black;
+            font-size: 1.25vw;
+            position: absolute;
+            margin-left: 30%;
+            margin-right: 30%;
+            width: 40%;
+            border: 1px solid gray;
+            z-index: 9999;
+            text-align: center;
+        }
+
+        @media (max-width: 750px) {
+            .checkbox {
+                visibility: hidden;
+            }
+
+            .checkbox-ui {
+                visibility: hidden;
+            }
+
+            #scroller {
+                visibility: hidden;
+            }
+
+            #credit {
+                visibility: hidden;
+            }
+
+            #title {
+                visibility: hidden;
+            }
+
+            #legend {
+                visibility: hidden;
+            }
+
+            #legend2 {
+                visibility: hidden;
+            }
+
+            #legend3 {
+                visibility: hidden;
+            }
+
+            #legend4 {
+                visibility: hidden;
+            }
+
+            #legend5 {
+                visibility: hidden;
+            }
+
+            #min-percent {
+                visibility: hidden;
+            }
+
+            #label {
+                font-size: 1em;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <div id='map'><div id ='label'>Residential</div></div>
-    <div id='map2'><div id ='label'>Production</div></div>
-    <div id='map3'><div id ='label'>Recreational</div></div>
-    <div id='map4'><div id ='label'>Undeveloped</div></div>
+    <div id='title'>How Land Development Affects Water Pollution</div>
+
+    <div id='map'>
+        <div id='label'>Residential</div>
+        <div id='min-percent'>Minimum percent</div>
+        <div id='legend'>0</div>
+        <div id='legend2'>1.79</div>
+        <div id='legend3'>3.38</div>
+        <div id='legend4'>4.96</div>
+        <div id='legend5'>11.02</div>
+    </div>
+    <div id='map2'>
+        <div id='label'>Production</div>
+        <div id='min-percent'>Minimum percent</div>
+        <div id='legend'>0</div>
+        <div id='legend2'>6.59</div>
+        <div id='legend3'>11.06</div>
+        <div id='legend4'>20.09</div>
+        <div id='legend5'>28.84</div>
+    </div>
+    <div id='map3'>
+        <div id='label'>Recreational</div>
+        <div id='min-percent'>Minimum percent</div>
+        <div id='legend'>0</div>
+        <div id='legend2'>0.12</div>
+        <div id='legend3'>0.29</div>
+        <div id='legend4'>0.68</div>
+        <div id='legend5'>2.22</div>
+    </div>
+    <div id='map4'>
+        <div id='label'>Undeveloped</div>
+        <div id='min-percent'>Minimum percent</div>
+        <div id='legend'>0</div>
+        <div id='legend2'>4.14</div>
+        <div id='legend3'>5.88</div>
+        <div id='legend4'>7.23</div>
+        <div id='legend5'>12.48</div>
+    </div>
 
     <a id="scroller" onclick="scroller()">More >>></a>
     <a id="return" onclick="scroller()">Back</a>
@@ -229,16 +402,31 @@
         <div>
             <h2 class="text-dark">About this map</h2>
             <p class="text-dark">
-                This map compares water pollution and land use in Washington. The state is divided into Water Resource Inventory Areas (WRIAs) and shaded
-                according to the relative frequency of land use types within each WRIA. The checkbox in the top right controls which of five kinds of
-                water pollution have been recorded. The map can be used to compare where certain land use types and water pollutants are similarly
-                frequent or infrequent.
+                This map shows comparisons between water pollution and land use in Washington. The state is divided into
+                Water Resource Inventory Areas (WRIAs)
+                and shaded according to the relative frequency of land use types within each WRIA. The map compares
+                where certain land use types
+                and water pollutants are similarly frequent or infrequent.
+            </p>
+            <p class="text-dark">
+                On the map, a darker color indicates a higher relative frequency of the associated land type, while a
+                lighter color indicates a lower
+                frequency. The checkbox in the top right controls which of five kinds of water pollution have been
+                recorded. Click on any map to zoom in;
+                click again to return to the default view.
+            </p>
+            <p class="text-dark">
+                Mapping files and data from <a href="https://ecology.wa.gov/">the Washington State Department of
+                    Ecology</a> and
+                <a href="https://www.naturalearthdata.com/">Natural Earth</a>.
             </p>
         </div>
     </div>
 
-    <div id="credit">Daniel Helton | <a href="https://newmapsplus.as.uky.edu/">New Maps Plus</a> | Made with <a href="https://www.qgis.org/en/site/">QGIS</a>, 
-        <a href="https://jupyter.org/">Jupyter</a>, and <a href="https://d3js.org/">D3</a></div>
+    <div id="credit">Daniel Helton | <a href="https://newmapsplus.as.uky.edu/">New Maps Plus</a> | Made with <a
+            href="https://www.qgis.org/en/site/">QGIS</a>,
+        <a href="https://jupyter.org/">Jupyter</a>, and <a href="https://d3js.org/">D3</a>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -275,15 +463,10 @@
                 info.style.visibility = 'hidden';
                 clicked = false;
             }
-
-
-            
         }
-
 
         var clicked = false
         function myInfo() {
-
             var x = document.getElementById('info');
             var y = document.getElementById('info-button');
             if (clicked) {
@@ -294,9 +477,7 @@
                 x.style.visibility = 'visible';
             }
             clicked = !clicked
-
         }
-
 
     </script>
 
