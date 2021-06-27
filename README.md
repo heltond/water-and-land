@@ -22,7 +22,7 @@ The map is a browser-based application that is compatible with mobile formats an
 
 #### C. Application layout
 
-[image](images/map_image.png)
+[image](images/map_image.PNG)
 
 This is what the map looks like under ordinary conditions. By default, the user is shown land use data in the form of a choropleth. The user has controls to display pollution data, zoom in or out, and display more information.
 
